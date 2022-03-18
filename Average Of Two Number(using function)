@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+float calcAverageofTwo(int a, int b)
+{
+    return (float)(a + b)/2;
+}
+
+int main()
+{
+    int number1, number2;
+    
+    printf("Enter the First Number to find Average = ");
+    scanf("%d",&number1);
+
+    printf("Enter the Second Number to find Average = ");
+    scanf("%d",&number2);
+    
+    float average = calcAverageofTwo(number1, number2);
+    
+    printf("The Average of %d and %d = %.2f\n", number1, number2, average);
+    
+    return 0;
+}
