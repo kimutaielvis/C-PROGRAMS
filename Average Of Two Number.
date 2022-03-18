@@ -1,0 +1,31 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+    int number1, number2;
+    float average;
+    
+    printf("Enter the First Number to find = ");
+    scanf("%d",&number1);
+
+    printf("Enter the Second Number to find  = ");
+    scanf("%d",&number2);
+
+    int sum = number1 + number2;
+
+    average = sum/2; //(float)sum/2;
+
+    printf("The Sum of %d and %d     = %d\n", number1, number2, sum);
+    printf("The Average of %d and %d = %.2f\n", number1, number2, average);
+    
+    return 0;
+}
